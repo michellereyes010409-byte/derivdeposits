@@ -3,182 +3,167 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>NoOnes Agency Withdrawal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deriv GO Style Page</title>
 
     <style>
         body {
             margin: 0;
-            background: #0f0f0f;
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0f1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             color: #fff;
         }
-        /* Top Bar */
         
-        .top-bar {
-            display: flex;
-            justify-content: space-between;
-            padding: 15px 20px;
-            align-items: center;
+        .card {
+            width: 360px;
+            background: #111827;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
         }
         
         .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
-        
-        .logo .red {
-            color: #ff3c45;
-        }
-        
-        .lang-btn {
-            background: #1b1b1b;
-            color: white;
-            border: 1px solid #333;
-            padding: 7px 15px;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-        /* Main Content */
-        
-        .content {
             text-align: center;
-            margin-top: 70px;
-        }
-        
-        .center-icon {
             margin-bottom: 20px;
         }
         
-        .circle {
-            width: 150px;
-            height: 150px;
-            border: 4px solid #ccc;
-            border-radius: 50%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: spin 6s linear infinite;
+        .logo img {
+            width: 120px;
         }
         
-        .circle p {
-            font-size: 26px;
+        .status {
+            background: #1f2937;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #facc15;
             font-weight: bold;
         }
         
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-        
-        .text {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #ddd;
-        }
-        /* Dots */
-        
-        .dots {
-            margin-top: 20px;
-        }
-        
-        .dots span {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background: #555;
-            margin: 0 4px;
-            border-radius: 50%;
-        }
-        
-        .dots .active {
-            background: #ff3c45;
-        }
-        /* Buttons */
-        
-        .buttons {
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
+        .amount {
             text-align: center;
+            margin-bottom: 25px;
         }
         
-        .signup {
-            width: 90%;
+        .amount h1 {
+            margin: 0;
+            font-size: 30px;
+            color: #22c55e;
+        }
+        
+        .amount span {
+            font-size: 14px;
+            color: #9ca3af;
+        }
+        
+        .details {
+            background: #020617;
             padding: 15px;
-            background: #ff3c45;
-            color: white;
-            border: none;
-            font-size: 18px;
-            border-radius: 8px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+        }
+        
+        .details div {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 10px;
-            cursor: pointer;
+            font-size: 14px;
         }
         
-        .login {
-            width: 90%;
+        .details div:last-child {
+            margin-bottom: 0;
+        }
+        
+        .label {
+            color: #9ca3af;
+        }
+        
+        .value {
+            font-weight: bold;
+        }
+        
+        .btn {
+            width: 100%;
             padding: 15px;
-            background: #1e1e1e;
-            color: white;
-            border: 1px solid #333;
-            font-size: 18px;
-            border-radius: 8px;
+            border: none;
+            border-radius: 10px;
+            background: #16a34a;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
             cursor: pointer;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: #15803d;
+        }
+        
+        .note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #9ca3af;
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- Top Bar -->
-    <header class="top-bar">
+    <div class="card">
+
         <div class="logo">
-            <span class="red">deriv</span>GO
+            <!-- NoOnes logo -->
+            <img src="https://noones.com/favicon.ico" alt="NoOnes">
         </div>
 
-        <button class="lang-btn">🌐 EN</button>
-    </header>
+        <div class="status">
+            Withdrawal Pending
+        </div>
 
-    <!-- Main Content -->
-    <section class="content">
-        <div class="center-icon">
-            <div class="circle">
-                <p>24/7</p>
+        <div class="amount">
+            <h1>KES 1,024,239.31</h1>
+            <span>Pending Amount</span>
+        </div>
+
+        <div class="details">
+            <div>
+                <span class="label">Payment Method</span>
+                <span class="value">M-Pesa</span>
+            </div>
+
+            <div>
+                <span class="label">Mpesa Number</span>
+                <span class="value">0716744001</span>
+            </div>
+
+            <div>
+                <span class="label">Recipient Name</span>
+                <span class="value">Rufas Kinyua Kamau</span>
+            </div>
+
+            <div>
+                <span class="label">Status</span>
+                <span class="value" style="color:#facc15;">Pending</span>
             </div>
         </div>
 
-        <p class="text">Round-the-clock trading and support</p>
-
-        <div class="dots">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span class="active"></span>
+        <button class="btn" onclick="window.location.href='noones.html'">
+        Withdraw Now
+    </button>
+        <button class="btn" onclick="window.location.href='noones.html'">
+        Cancel Transaction Now
+    </button>
+        <div class="note">
+            Processing may take a few minutes depending on network availability.
         </div>
-    </section>
 
-    <!-- Bottom Buttons -->
-    <footer class="buttons">
-        <button class="signup">Deposit With Noones</button>
-        <button class="login">Deposit</button>
-    </footer>
-
-    <!-- JS -->
-    <script>
-        // Redirect both buttons to noones.html
-        document.querySelector(".signup").onclick = () => {
-            window.location.href = "noones.html";
-        };
-
-        document.querySelector(".login").onclick = () => {
-            window.location.href = "noones.html";
-        };
-    </script>
+    </div>
 
 </body>
 
